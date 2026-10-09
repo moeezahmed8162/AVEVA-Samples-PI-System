@@ -731,8 +731,6 @@ PI data can carry status flags that describe the quality of a value. When a valu
 
 Each field is `true` when the flag is set. When the flag is not set, the field is either `false` or omitted, so test for a truthy value rather than comparing to `false`. A value can carry more than one flag at a time. Native PI Vision symbols show only one flag, using the precedence `Questionable` > `Substituted` > `Annotated`; we recommend that custom symbols do the same.
 
-A `RawTime` field may also appear next to flagged values. It is reserved for internal use and is not supported for custom symbols. Annotation content is not available to custom symbols.
-
 Respect the user's choice to show or hide status flags by checking `scope.userSettings.ShowStatusFlags` before displaying them. See [User settings](#user-settings).
 
 <table>
